@@ -1,3 +1,9 @@
 name = Persistent Update API
 description = Adds 'hook_persistent_update' for Persistent Updates.
 core = 7.x
+
+
+
+; Files
+
+files[] = persistent_update.test
