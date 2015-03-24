@@ -1,5 +1,5 @@
 name = Persistent Update API
-description = Adds 'hook_persistent_update' for Persistent Updates.
+description = Adds 'hook_persistent_update' for persistent updates.
 core = 7.x
 
 
