@@ -1,9 +1,0 @@
-name = Persistent Update API
-description = Adds 'hook_persistent_update' for persistent updates.
-core = 7.x
-
-
-
-; Files
-
-files[] = persistent_update.test
