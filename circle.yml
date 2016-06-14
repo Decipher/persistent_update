@@ -2,7 +2,6 @@ machine:
   services:
     - docker
 
-dependencies:
+test:
   override:
-    - docker info
-    - docker build -t drupalci/web-5.5 .
+    - docker run -v $(pwd):/module -it deciphered/web-5.6
