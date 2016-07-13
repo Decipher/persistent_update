@@ -4,4 +4,4 @@ machine:
 
 test:
   override:
-    - docker run -v $(pwd):/module -it deciphered/web-5.6
+    - docker run --rm -v $(pwd):/dcir -it deciphered/dcir-5.6
