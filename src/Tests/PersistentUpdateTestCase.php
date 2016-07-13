@@ -48,9 +48,9 @@ class PersistentUpdateTestCase extends WebTestBase {
    * Test persistent updates are run and persist.
    */
   public function testPersistentUpdate() {
-    // Ensure Persistent Update API schema is set to 8000 after install.
+    // Ensure Persistent Update API schema is set to 8100 after install.
     $schema_version = drupal_get_installed_schema_version('persistent_update');
-    $this->assertEqual($schema_version, 8000, 'Persistent Update API schema is set at 8000 after install.');
+    $this->assertEqual($schema_version, 8100, 'Persistent Update API schema is set at 8000 after install.');
 
     // Ensure Persistent Update API update is available to be run.
     $this->drupalGet('/update.php/selection');
@@ -60,9 +60,9 @@ class PersistentUpdateTestCase extends WebTestBase {
     $this->drupalGet('/update.php/run');
     $this->assertText('Updates were attempted.', 'Persistent Update API module updates run.');
 
-    // Ensure Persistent Update API schema is set to 8000 after updates.
+    // Ensure Persistent Update API schema is set to 8100 after updates.
     $schema_version = drupal_get_installed_schema_version('persistent_update');
-    $this->assertEqual($schema_version, 8000, 'Persistent Update API schema is set at 8000 after updates.');
+    $this->assertEqual($schema_version, 8100, 'Persistent Update API schema is set at 8000 after updates.');
 
     // Ensure Persistent Update API update is still available to be run.
     $this->drupalGet('/update.php/selection');
