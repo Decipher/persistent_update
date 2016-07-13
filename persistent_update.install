@@ -14,7 +14,7 @@ function persistent_update_install() {
 }
 
 /**
- * [PERSISTENT] Trigger all Persistent Updates.
+ * PERSISTENT: Trigger all Persistent Updates.
  */
 function persistent_update_update_8001() {
   // Empty update hook placeholder.

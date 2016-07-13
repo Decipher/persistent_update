@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\persistent_update\Tests\PersistentUpdateTestCase.
- */
-
 namespace Drupal\persistent_update\Tests;
 
 use Drupal\simpletest\WebTestBase;
@@ -73,4 +68,5 @@ class PersistentUpdateTestCase extends WebTestBase {
     $this->drupalGet('/update.php/selection');
     $this->assertText('persistent_update module', 'Persistent Update API module update still available.');
   }
+
 }
